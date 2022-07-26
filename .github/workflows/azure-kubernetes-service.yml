@@ -34,12 +34,12 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
-  CONTAINER_NAME: "your-container-name"
-  RESOURCE_GROUP: "your-resource-group"
-  CLUSTER_NAME: "your-cluster-name"
-  IMAGE_PULL_SECRET_NAME: "your-image-pull-secret-name"
-  DEPLOYMENT_MANIFEST_PATH: 'your-deployment-manifest-path'
+  AZURE_CONTAINER_REGISTRY: "jamesdemo.azurecr.io"
+  CONTAINER_NAME: "canary-app"
+  RESOURCE_GROUP: "James-test-rg"
+  CLUSTER_NAME: "bluegreen-demo-aks"
+  IMAGE_PULL_SECRET_NAME: "acr-secret"
+  DEPLOYMENT_MANIFEST_PATH: 'manifests'
 
 jobs:
   buildImage:
